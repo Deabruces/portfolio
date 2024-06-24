@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+Codigo principal de aplicacion
+*/
+
+:root{
+  --seashell: #fff7f3;
+  --night-rider: #332e2e;
+  --tea-green: #d9ffb6;
+  --rojo: #ca3e45;
+  --pink: #ffd3f3;
+  --blanco: white;
+  --gris: #303030;
+  --gris-f: #757575;
+  --negro: black;
+  --tipo-titular: "Playfair Display", serif;
+  --tipo-principal: "Roboto", sans-serif;
+}
+
+body{
+  font-family: var(--tipo-principal);
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--tipo-titular);
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--seashell);
+}
+
+.list{
+  display: flex;
+  gap: 3rem;
+}
+
+.hero{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 600px;
+width: 100%;
+position: relative;
+border-top: 2rem;
+
+}
+
+.hero__text{
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.hero-text__title{
+  font-size: 4rem;
+  padding-bottom: 1.5rem;
+}
+
+.hero-text__description{
+
+}
+
+/* .hero__img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+
+/* .hero-img__container{
+  position: absolute;
+  margin-left: 0;
+  width: 50%;
+  height: 100%; 
+} */
+
+/* .hero-img__container--right{
+  right: 0;
+} */
+
+
+/* .hero-img__source{
+  width: 100%;
+  height: 100%;
+}  */
+
+a{
+  color:#2f2d2d;
+}
+
+/* .hero-img__separator{
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  left:50%; 
+  z-index: 2;
+  cursor:ew-resize;
+} */
+
+.hero__img{
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+.hero__img--left{
+  background-image: url("../img/Hero_Blanco_y_Negro.jpg");
+  background-size: auto 100%;
+  width: 50%;
+  height: 100%;
+  /* resize: horizontal;
+  overflow: scroll; */
+  transition: all 0.9s ease-in;
+}
+
+.hero__img--left--big{
+  width: 90%;
+}
+.hero__img--left--small{
+  width: 10%;
+}
+
+.hero__img--right{
+  background-image: url("../img/Hero_a_Color.jpg");
+  background-size: auto 100%;
+  width: 50%;
+  height: 100%;
+  flex:1;
+  background-position: right;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: var(--pink);
+  width: 100%;
+  height: 200px;
+  margin-top: 20rem;
+ 
+  
+}
+
+.footer-ul{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.5rem 3.5rem;
+  padding: 70px 100px 50px 70px;
+}
+
+.footer-ol{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+
+

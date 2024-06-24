@@ -1,0 +1,33 @@
+:root{
+  --rojo: #e50914;
+  --blanco: white;
+  --gris: #303030;
+  --gris-f: #757575;
+  --negro: black;
+  --tipo-titular: "Playfair Display", serif;
+  --tipo-principal: "Inter", sans-serif;
+}
+
+
+* {
+  margin:0;
+  border:0;
+  padding:0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: var(--tipo-principal);
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit
+}
