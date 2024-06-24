@@ -93,82 +93,46 @@ a{
 
 .hero{
 display: flex;
-flex-direction: column;
 align-items: center;
 justify-content: center;
-height: 600px;
+aspect-ratio: 2800/600;
 width: 100%;
 position: relative;
 border-top: 2rem;
+padding-bottom: 0;
 
 }
 
 .hero__text{
   position: absolute;
   z-index: 1;
-  text-align: center;
+  top:100px;
+  align-items: center;
+  color: var(--night-rider);
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .hero-text__title{
-  font-size: 4rem;
+  font-size: 3.2rem;
   padding-bottom: 1.5rem;
 }
 
-.hero-text__description{
-
-}
-
-/* .hero__img{
-  position: relative;
-  height: 100%;
-  width: 100%;
-} */
-
-/* .hero-img__container{
-  position: absolute;
-  margin-left: 0;
-  width: 50%;
-  height: 100%; 
-} */
-
-/* .hero-img__container--right{
-  right: 0;
-} */
-
-
-/* .hero-img__source{
-  width: 100%;
-  height: 100%;
-}  */
 
 a{
   color:#2f2d2d;
 }
 
-/* .hero-img__separator{
-  position: absolute;
-  height: 100%;
-  width: 3px;
-  background-color: #fff;
-  left:50%; 
-  z-index: 2;
-  cursor:ew-resize;
-} */
-
 .hero__img{
   display: flex;
   width: 100%;
-  height: 100%;
-
 }
 
 .hero__img--left{
-  background-image: url("../img/Hero_Blanco_y_Negro.jpg");
-  background-size: auto 100%;
   width: 50%;
-  height: 100%;
-  /* resize: horizontal;
-  overflow: scroll; */
+  position: relative;
+  
   transition: all 0.9s ease-in;
 }
 
@@ -180,15 +144,21 @@ a{
 }
 
 .hero__img--right{
-  background-image: url("../img/Hero_a_Color.jpg");
-  background-size: auto 100%;
   width: 50%;
-  height: 100%;
   flex:1;
-  background-position: right;
+  position: relative;
+  overflow: hidden;
+
 }
 
+.hero__img--right img{
+  position: absolute;
+  right:0;
+}
 
+.hero img{
+  width: 100vw;
+}
 
 
 
