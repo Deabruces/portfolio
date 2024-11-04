@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio Deanny Bruces</title>
+  <link rel="stylesheet" href="./style/reset.css"></link>
   <link rel="stylesheet" href="./style/global.css"></link>
+  <link rel="stylesheet" href="./style/inicio.css"></link>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../footer.css"></link>
   <link defarel="stylesheet" href="./script.js"></link>
 </head>
 <body>
@@ -19,12 +22,12 @@
     - Transiciones personalizadas
   -->
 <header class="header">
-  <span class="header__brand" aria-label="Portafolio de Deanny Bruces"><a href="#inicio">Deanny Bruces</a></span>
+  <span class="header__brand" aria-label="Portafolio de Deanny Bruces"><a href="/">Deanny Bruces</a></span>
   <nav class="header__nav">
     <ul class="list">
       <li class="list__element"><a href="#proyectos" title="Proyectos">Proyectos</a></li>
       <li class="list__element"><a href="#contacto" title="Contacto">Contacto</a></li>
-      <li class="list__element"><a href="#sobre-mi" title="Sobre mi">Sobre mi</a></li>
+      <li class="list__element"><a href="./about" title="Sobre mi">Sobre mi</a></li>
     </ul>
   </nav>
 </header>
@@ -48,43 +51,88 @@
   <section class="hero">
 
     <div class="hero__text hero-text">
-      <h1 class="hero-text__title">Frontend Developer</Frontend></h1>
-      <p class="hero-text__description">¡Hola! Soy Deanny, una ingeniero industrial apasionada por <br /> el desarrollo web, amo crear diseños llamativos que mejoren <br /> la experiencia del usuario.</p>
+      <h1 class="hero-text__title">&lt;Frontend Developer/&gt;</Frontend></h1>
+      <q class="hero-text__description">¡Hola! Soy Deanny, una ingeniero industrial apasionada por <br /> el desarrollo web, amo crear diseños llamativos que mejoren <br /> la experiencia del usuario.</p>
     </div>
     
     <div class="hero__img">
-
-    <div class="hero__img--left">
-      <img src="./img/Hero_Blanco_y_Negro.jpg" alt="BW">
-    </div>
-    <div class="hero__img--right">
-      <img src="./img/Hero_a_Color.jpg" alt="Color">
-
-    </div>
-
+      <div class="hero__img--left">
+        <img src="./img/Hero_Blanco_y_Negro.jpg" alt="BW">
+      </div>
+      <div class="hero__img--right">
+        <img src="./img/Hero_a_Color.jpg" alt="Color">
+      </div>
     </div>
 
   </section>
-<script>
-  const imageLeft=document.querySelector(".hero__img--left")
-  const imageRight=document.querySelector(".hero__img--right")
-  imageLeft.addEventListener("mouseover",()=>imageLeft.classList.add('hero__img--left--big'))
-  imageLeft.addEventListener("mouseout",()=>imageLeft.classList.remove('hero__img--left--big'))
-  imageRight.addEventListener("mouseover",()=>imageLeft.classList.add('hero__img--left--small'))
-  imageRight.addEventListener("mouseout",()=>imageLeft.classList.remove('hero__img--left--small'))
-</script>
+
+  <section class="portafolio">
+
+    <h2>Trabajos</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet ipsa error doloremque voluptatibus, ducimus quia!</p>
+    <div class="trabajos">
+      <article class="trabajos__article">
+        <a href="#" title="trabajo1">
+         <figure>
+           <img src="https://picsum.photos/300/300" alt="imagen" loading="lazy">
+         </figure>
+         <h4>Nombre del trabajo</h4>
+        </a>
+      </article>
+
+      <article class="trabajos__article">
+        <a href="#" title="trabajo2">
+        <figure>
+          <img src="https://picsum.photos/300/300" alt="imagen" loading="lazy">
+        </figure>
+        <h4>Nombre del trabajo</h4>
+        </a>
+      </article>
+
+      <article class="trabajos__article">
+        <a href="#" title="trabajo2">
+        <figure>
+          <img src="https://picsum.photos/300/300" alt="imagen" loading="lazy">
+        </figure>
+        <h4>Nombre del trabajo</h4>
+        </a>
+      </article>
+
+      <article class="trabajos__article">
+        <a href="#" title="trabajo2">
+        <figure>
+          <img src="https://picsum.photos/300/300" alt="imagen" loading="lazy">
+        </figure>
+        <h4>Nombre del trabajo</h4>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 class="h2">about</h2>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae nulla, odit ipsam voluptate itaque maiores!</p>
+    <p class="p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem doloremque laudantium libero, possimus aspernatur odit.</p>
+    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus tempora autem itaque sint hic ad!</p>
+  </section>
+
+
 </main>
 
-
-
-
-
-<footer class="footer">
+<footer class="footer" id="footer">
   <ul class="footer-ul">
-    <li class="footer-rrss">Git Hub</li>
-    <li class="footer-rrss">Instagram</li>
-    <li class="footer-rrss">LinkedIn</li>
-    <li class="footer-rrss">Correo</li>
+    <li class="footer-rrss">
+      <a href="#" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">Git Hub</a>
+    </li>
+    <li class="footer-rrss">
+      <a href="#" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </li>
+    <li class="footer-rrss">
+      <a href="#" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </li>
+    <li class="footer-rrss">
+      <a href="#" class="a" title="GitHub" target="_blank" rel="noopener noreferrer">email</a>
+    </li>
   </ul>
 
   <ol class="footer-ol">
@@ -92,8 +140,15 @@
     <li class="footer-ol__li">© 2024 by Deanny Bruces</li>
   </ol>
   
-</footer>
+  </footer>
 
-
+  <script>
+    const imageLeft=document.querySelector(".hero__img--left")
+    const imageRight=document.querySelector(".hero__img--right")
+    imageLeft.addEventListener("mouseover",()=>imageLeft.classList.add('hero__img--left--big'))
+    imageLeft.addEventListener("mouseout",()=>imageLeft.classList.remove('hero__img--left--big'))
+    imageRight.addEventListener("mouseover",()=>imageLeft.classList.add('hero__img--left--small'))
+    imageRight.addEventListener("mouseout",()=>imageLeft.classList.remove('hero__img--left--small'))
+  </script>
 </body>
 </html>

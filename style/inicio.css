@@ -1,0 +1,116 @@
+.hero__img {
+  display: flex;
+  position: relative;
+  width: 100vh;
+  flex-direction: column;
+}
+
+.hero__img--left {
+  position: absolute;
+}
+
+.hero__img--right {
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+
+@media screen and (min-width:968px){
+  .hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 2800/600;
+    width: 100%;
+    position: relative;
+    border-top: 2rem;
+    padding-bottom: 0;
+    }
+    
+    .hero__text{
+      position: absolute;
+      z-index: 1;
+      top:100px;
+      align-items: center;
+      color: var(--night-rider);
+      display:flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+    
+    .hero-text__title{
+      font-size: 2.2rem;
+      width: 180px;
+      padding-bottom: 1.5rem;
+    }
+    
+    .hero-text__description {
+      width: 180px;
+    }
+    
+    .hero__img{
+      display: flex;
+      width: 100%;
+    }
+    
+    .hero__img--left{
+      width: 50%;
+      position: relative;
+      
+      transition: all 0.9s ease-in;
+    }
+    
+    .hero__img--left--big{
+      width: 90%;
+    }
+    .hero__img--left--small{
+      width: 10%;
+    }
+    
+    .hero__img--right{
+      width: 50%;
+      flex:1;
+      position: relative;
+      overflow: hidden;
+    
+    }
+    
+    .hero__img--right img{
+      position: absolute;
+      right:0;
+    }
+    
+    .hero img{
+      width: 100vw;
+    }
+    
+    .portafolio{
+      text-align: center;
+      background: #757575;
+      margin: 2em 0;
+      padding: 1em 2em 1em 2em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column wrap;
+    }
+    
+    .trabajos{
+      display: grid;
+      width: 90%;
+      background: #d9ffb6;
+      grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+      gap: 1em;
+    }
+    
+    .trabajos__article{
+      width: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      background: pink;
+      min-height: 10vw;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
