@@ -1,20 +1,39 @@
-.hero__img {
-  display: flex;
+.hero {
+  width: 100%;
   position: relative;
-  width: 100vh;
-  flex-direction: column;
 }
 
-.hero__img--left {
-  position: absolute;
+.hero__img img{
+  width: 100%;
 }
 
 .hero__img--right {
   position: absolute;
   mix-blend-mode: multiply;
+  top: 0;
 }
 
+.hero__text{
+  position: absolute;
+  z-index: 10;
+  top:100px;
+  color: var(--night-rider);
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+}
 
+.hero-text__title{
+  font-size: 2.2rem;
+  width: 180px;
+  padding-bottom: 1.5rem;
+}
+
+.hero-text__description {
+  width: 180px;
+}
+
+/*
 @media screen and (min-width:968px){
   .hero{
     display: flex;
@@ -29,7 +48,7 @@
     
     .hero__text{
       position: absolute;
-      z-index: 1;
+      z-index: 10;
       top:100px;
       align-items: center;
       color: var(--night-rider);
@@ -114,3 +133,5 @@
       text-align: center;
     }
   }
+
+  */
